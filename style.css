@@ -1,0 +1,95 @@
+body {
+  background: linear-gradient(#0a2540, #1e90ff);
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.snowman {
+  position: relative;
+  margin: 40px auto;
+  width: 200px;
+}
+
+.head {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+}
+
+.eye {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+}
+
+.eye.left { left: 25px; }
+.eye.right { right: 25px; }
+
+.nose {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 20px solid orange;
+  position: absolute;
+  top: 45px;
+  left: 44px;
+}
+
+.body {
+  width: 140px;
+  height: 140px;
+  background: white;
+  border-radius: 50%;
+  margin: -10px auto;
+  position: relative;
+}
+
+.button {
+  width: 8px;
+  height: 8px;
+  background: black;
+  border-radius: 50%;
+  margin: 15px auto;
+}
+
+.hat {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hat-top {
+  width: 80px;
+  height: 50px;
+  background: black;
+  margin: auto;
+}
+
+.hat-brim {
+  width: 100px;
+  height: 10px;
+  background: black;
+  margin: auto;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+}
