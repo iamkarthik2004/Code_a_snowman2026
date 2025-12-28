@@ -3,17 +3,15 @@ let happy = true;
 function changeMood() {
   const eyes = document.querySelectorAll(".eye");
 
-  if (happy) {
-    eyes.forEach(eye => {
+  eyes.forEach(eye => {
+    if (happy) {
       eye.style.height = "2px";
-      eye.style.top = "35px";
-    });
-  } else {
-    eyes.forEach(eye => {
+      eye.style.top = "38px";
+    } else {
       eye.style.height = "10px";
-      eye.style.top = "30px";
-    });
-  }
+      eye.style.top = "32px";
+    }
+  });
 
   happy = !happy;
 }
